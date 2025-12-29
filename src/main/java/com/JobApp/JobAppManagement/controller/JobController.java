@@ -1,4 +1,4 @@
-package com.JobApp.JobAppManagement;
+package com.JobApp.JobAppManagement.controller;
 
 import com.JobApp.JobAppManagement.Model.JobPost;
 import com.JobApp.JobAppManagement.Service.JobService;
@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class JobController {
 
     @Autowired
